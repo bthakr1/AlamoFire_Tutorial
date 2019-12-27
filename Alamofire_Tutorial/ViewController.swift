@@ -9,6 +9,7 @@
 // importing all module below
 
 import UIKit
+import Alamofire
 
 
 
