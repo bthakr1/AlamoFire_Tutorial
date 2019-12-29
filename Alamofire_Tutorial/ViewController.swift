@@ -18,6 +18,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let parameters = ["category": "Movies", "genre" : "Action"]
+        
+        Alamofire.request("https://httpbin.org/get", parameters: parameters).response {
+            response in debugPrint(response)
+        }
     }
 
 
